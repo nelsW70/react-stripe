@@ -381,9 +381,10 @@ Stripe Styles
   transform: translateX(-50%);
   z-index: 3;
   display: none;
+  opacity: 0;
   padding: 2rem;
   border-radius: var(--radius);
-  transition: var(--transition);
+  transition: all 0.5s;
 }
 .submenu::before {
   content: '';
@@ -401,6 +402,7 @@ Stripe Styles
 
 .submenu.show {
   display: block;
+  opacity: 1;
 }
 
 .submenu-center {
